@@ -23,18 +23,6 @@ class MainActivity : AppCompatActivity() {
 
     private var mediaPlayer: MediaPlayer? = null
 
-    fun BottomSheetDialog() {
-        val bottomSheetView = layoutInflater.inflate(R.layout.bottom_sheet_layout, null)
-        val bottomSheetDialog = BottomSheetDialog(this)
-        bottomSheetDialog.setContentView(bottomSheetView)
-        bottomSheetDialog.show()
-
-        val bottomSheetDeleteIv: ImageView = bottomSheetView.findViewById(R.id.bottom_sheet_delete_iv)
-        bottomSheetDeleteIv.setOnClickListener {
-
-        }
-    }
-
     fun onDataReceived(jsonData: String) {
         // HomeFragment에서 받은 includedSongs의 id값으로 songs의 맨 뒤에 추가함
         // 포커스를 includedSongs의 첫 번째 곡으로 설정할 것
