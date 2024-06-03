@@ -47,9 +47,6 @@ class AlbumFragment : Fragment() {
             tab.text = information[position]
         }.attach()
 
-//        binding.songLalacLayout.setOnClickListener {
-//            Toast.makeText(activity, "LILAC", Toast.LENGTH_SHORT).show()
-//        }
         return binding.root
     }
 
