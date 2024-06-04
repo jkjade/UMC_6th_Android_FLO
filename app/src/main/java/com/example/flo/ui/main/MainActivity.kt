@@ -18,6 +18,7 @@ import com.example.flo.data.entities.Album
 import com.example.flo.data.entities.Song
 import com.example.flo.databinding.ActivityMainBinding
 import com.google.gson.Gson
+import com.kakao.sdk.common.util.Utility
 
 class MainActivity : AppCompatActivity() {
 
@@ -58,6 +59,9 @@ class MainActivity : AppCompatActivity() {
         setTheme(R.style.Theme_FLO)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        val keyHash = Utility.getKeyHash(this)
+        Log.d("ç", keyHash)
 
         // Album 과 Song 더미 데이터를 만드는 순서에 주의할 것
         inputDummyAlbums()
