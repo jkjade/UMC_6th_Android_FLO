@@ -1,7 +1,6 @@
 
 plugins {
     id("com.android.application")
-    // 아래 줄 주석 처리
     id("org.jetbrains.kotlin.android")
     id("kotlin-android")
     id("kotlin-kapt")
@@ -43,13 +42,6 @@ android {
 }
 
 dependencies {
-    //RoomDB
-    implementation("androidx.room:room-ktx:2.4.2")
-    implementation("androidx.room:room-runtime:2.4.2")
-    kapt("androidx.room:room-compiler:2.4.2")
-
-    //Gson
-    implementation("com.google.code.gson:gson:2.9.0")
 
     // 오픈소스 라이브러리 추가
     implementation("me.relex:circleindicator:2.1.6")
@@ -73,5 +65,13 @@ dependencies {
     //Glide
     implementation("com.github.bumptech.glide:glide:4.11.0")
     annotationProcessor("com.github.bumptech.glide:compiler:4.11.0")
+
+    //Gson
+    implementation("com.google.code.gson:gson:2.9.0")
+
+    //RoomDB
+    implementation("androidx.room:room-ktx:2.4.2")
+    implementation("androidx.room:room-runtime:2.4.2")
+    kapt("androidx.room:room-compiler:2.4.2")
 
 }
