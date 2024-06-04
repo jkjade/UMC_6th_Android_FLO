@@ -43,10 +43,12 @@ android {
 }
 
 dependencies {
+    //RoomDB
     implementation("androidx.room:room-ktx:2.4.2")
     implementation("androidx.room:room-runtime:2.4.2")
     kapt("androidx.room:room-compiler:2.4.2")
 
+    //Gson
     implementation("com.google.code.gson:gson:2.9.0")
 
     // 오픈소스 라이브러리 추가
