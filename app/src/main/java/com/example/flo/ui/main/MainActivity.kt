@@ -61,7 +61,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         val keyHash = Utility.getKeyHash(this)
-        Log.d("ç", keyHash)
+        Log.d("hash", keyHash)
 
         // Album 과 Song 더미 데이터를 만드는 순서에 주의할 것
         inputDummyAlbums()

@@ -5,6 +5,7 @@
     <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
+        android:name=".GlobalApplication"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -31,8 +32,9 @@
             android:exported="true"/>
         <activity android:name=".ui.signin.LoginActivity"/>
         <activity android:name=".ui.signup.SignUpActivity"/>
-        <activity
-            android:name=".GlobalApplication" />
+
+<!--        <activity-->
+<!--            android:name=".GlobalApplication"/>-->
         <activity
             android:name="com.kakao.sdk.auth.AuthCodeHandlerActivity"
             android:exported="true">
